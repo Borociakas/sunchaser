@@ -1,0 +1,542 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primaryColor: #af9a7d;
+  --mainWhite: #fff;
+  --offWhite: #f7f7f7;
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --darkGrey: #cfcfcf;
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 3px;
+  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.Gallery-container {
+  height: 70vh;
+  width: 100vw;
+  display: flex;
+  position: relative;
+}
+
+.Gallery-background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: all ease-in-out 1s;
+}
+
+.Gallery-background--active {
+  opacity: 1;
+}
+
+.Gallery-background--inactive {
+  opacity: 0;
+}
+
+.Main-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 1vh 2vh 0.5vh;
+}
+
+#Logo {
+  max-width: 30vw;
+  max-height: 20vw;
+}
+#Menu-btn {
+  background: none;
+  border: none;
+}
+#Header-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1vh;
+  font-family: "Pacifico", cursive;
+  font-size: 1.4em;
+}
+
+.Meniu-drop li {
+  list-style-type: none;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.25em;
+  color: rgb(77, 73, 73);
+  padding: 10px 0px;
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+
+.Meniu-drop-close {
+  transition: all 0.3s ease-out;
+  max-height: 0vh;
+  opacity: 0;
+}
+
+.Meniu-drop-open {
+  transition: all 0.3s ease-out;
+  max-height: 20vh;
+  margin-bottom: 2vh;
+}
+a:-webkit-any-link {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1920px) {
+  #Kokybe p {
+    width: 50vw;
+  }
+
+  .About p {
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 813px) {
+  #Main-navigation ul li:hover {
+    color: red;
+    transform: scale(1.2);
+  }
+
+  .Meniu-drop {
+    display: none;
+  }
+  #Menu-btn {
+    display: none;
+  }
+
+  #Main-navigation {
+    display: flex;
+    align-items: flex-end;
+    width: 35vw;
+  }
+
+  #Main-navigation ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    font-size: 1.25em;
+  }
+
+  #Main-navigation ul li {
+    transition: 150ms ease-in-out;
+  }
+
+  .Footer {
+    max-height: 35vh;
+    background-color: rgb(24, 24, 24);
+    color: rgb(223, 223, 223);
+  }
+
+  .Footer ul {
+    list-style-type: none;
+    padding: 1vh;
+  }
+  .Footer-meniu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    font-family: sans-serif;
+    background-color: rgb(41, 38, 38);
+    color: rgba(255, 255, 255, 0.726);
+    height: 5vh;
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+  .Footer p {
+    display: flex;
+    justify-content: center;
+    padding: 1vh 0;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+  }
+
+  #Adresas {
+    border-top: 0.2vh solid rgb(189, 181, 181);
+    font-size: 1.5em;
+  }
+
+  .Susisiekite {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Quicksand", sans-serif;
+    padding: 1vh;
+    font-size: 1.5em;
+  }
+
+  .Sekite {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2vh;
+  }
+
+  .Sekite td:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1.2);
+  }
+
+  .banner {
+    max-height: 30vh;
+  }
+  #banner-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3vh;
+  }
+
+  .About header {
+    display: flex;
+    justify-content: center;
+    padding: 2vh 0;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+  }
+
+  .About p {
+    padding: 3vh;
+    display: flex;
+    justify-content: center;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.5em;
+  }
+
+  .About img {
+    min-width: 25vw;
+    height: 25vw;
+    border-radius: 40%;
+    margin: 0 2vw;
+  }
+  #Ieskantiems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3vh;
+    font-family: "Pacifico", cursive;
+    font-size: 1.7em;
+
+    font-family: "Pacifico", cursive;
+  }
+
+  #HR {
+    margin: 2vh 0;
+  }
+  #Kokybe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #Kokybe p {
+    width: 50vw;
+  }
+  #Komfortas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #Komfortas p {
+    width: 50vw;
+  }
+  #Pazanga {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1vh;
+    justify-content: space-around;
+  }
+  #Pazanga p {
+    width: 50vw;
+  }
+
+  #Nepamirstami {
+    display: flex;
+    justify-content: center;
+    margin: 2vh;
+    font-size: 1.8em;
+    font-family: "Pacifico", cursive;
+  }
+  .Galery img {
+    width: 49vw;
+    height: 42vw;
+    margin: 0.2vh;
+  }
+
+  .Galery-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 812px) {
+  #Main-navigation {
+    display: none;
+  }
+  .Nav-bar {
+    background-color: white;
+    border: none;
+    padding: none;
+  }
+  .Logo-image {
+    height: 10vh;
+  }
+  .Header-info {
+    justify-self: center;
+    align-self: center;
+  }
+  .Meniu-button {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgb(77, 73, 73);
+    transition: all 0.2s ease-out;
+  }
+  .Footer {
+    max-height: 35vh;
+    background-color: rgb(24, 24, 24);
+    color: rgb(223, 223, 223);
+  }
+
+  .Footer ul {
+    list-style-type: none;
+    padding: 1vh;
+  }
+  .Footer-meniu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    font-family: sans-serif;
+    background-color: rgb(41, 38, 38);
+    color: rgba(255, 255, 255, 0.726);
+    height: 5vh;
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+  .Footer p {
+    display: flex;
+    justify-content: center;
+    padding: 1vh 0;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+  }
+  #Adresas {
+    border-top: 0.2vh solid rgb(189, 181, 181);
+  }
+
+  .Susisiekite {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Quicksand", sans-serif;
+    padding: 1vh;
+  }
+
+  .Sekite td {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2vh;
+  }
+
+  .About header {
+    display: flex;
+    justify-content: center;
+    padding: 2vh 0;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+  }
+
+  .About p {
+    padding: 3vh;
+    display: flex;
+    justify-content: center;
+    font-family: "Quicksand", sans-serif;
+    font-size: smaller;
+  }
+
+  .About img {
+    min-width: 50vw;
+    height: 50vw;
+    border-radius: 40%;
+    margin: 0 2vw;
+  }
+
+  #Ieskantiems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh;
+    font-family: "Pacifico", cursive;
+    font-size: 1.25em;
+
+    font-family: "Pacifico", cursive;
+  }
+
+  #HR {
+    margin: 2vh 0;
+  }
+  #Kokybe {
+    display: flex;
+    flex-direction: row;
+  }
+  #Komfortas {
+    display: flex;
+    flex-direction: row;
+  }
+  #Pazanga {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1vh;
+  }
+
+  .Galery-images img {
+    width: 100vw;
+  }
+  .Galerija-header {
+    font-family: "Quicksand", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3vh 2vh;
+  }
+}
+@media screen and (min-width: 768px) {
+  .Meniu-button {
+    display: none;
+  }
+}
+
+.banner {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--mainWhite);
+  padding: 2rem 1rem;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+  z-index: 2;
+}
+.banner h1 {
+  font-size: 2rem;
+}
+/* .banner div {
+  width: 10rem;
+  height: 5px;
+  background: var(--primaryColor);
+} */
+.banner p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primary {
+  margin-top: 2vh;
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainBlack);
+  background: var(--primaryColor);
+  padding: 0.4rem 0.9rem;
+  border: 3px solid var(--primaryColor);
+  transition: var(--mainTransition);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  background: transparent;
+  color: var(--primaryColor);
+}
+@media screen and (min-width: 576px) {
+  .banner {
+    padding: 2rem 3rem;
+  }
+  .banner h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .banner {
+    padding: 2rem 6rem;
+  }
+  .banner h1 {
+    font-size: 3rem;
+  }
+}
+
+.banner {
+  display: inline-block;
+  width: 100vw;
+  margin-top: 20vh;
+  align-items: center;
+  height: 30vh;
+}
+
+#Susisiek {
+  animation-name: pirmas;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pirmas {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(5deg);
+  }
+
+  40% {
+    transform: rotate(-5deg);
+  }
+
+  60% {
+    transform: rotate(5deg);
+    transform: scale(1.5);
+  }
+
+  80% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+    transform: scale(1);
+  }
+}
+
+.Rezervacija-Title {
+  display: flex;
+  justify-content: center;
+  padding: 5vh;
+}
